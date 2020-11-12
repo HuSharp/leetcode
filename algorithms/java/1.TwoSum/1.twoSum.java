@@ -1,10 +1,16 @@
-import java.util.HashMap;
-import java.util.Map;
-
 /*
- * @lc app=leetcode.cn id=1 lang=java
+ * @Descripttion: 
+ * @version: 
+ * @Author: HuSharp
+ * @Date: 2020-11-12 17:32:29
+ * @LastEditors: HuSharp
+ * @LastEditTime: 2020-11-12 17:32:51
+ * @@Email: 8211180515@csu.edu.cn
+ */
+/*
+ * @lc app=leetcode id=1 lang=java
  *
- * [1] 两数之和
+ * [1] Two Sum
  */
 
 // @lc code=start
