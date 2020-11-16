@@ -6,7 +6,7 @@ import java.util.Stack;
  * @Author: HuSharp
  * @Date: 2020-11-12 19:13:24
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-12 19:28:44
+ * @LastEditTime: 2020-11-16 12:53:39
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -18,47 +18,7 @@ import java.util.Stack;
 // @lc code=start
 class MyQueue {
 
-    // // 采用一个 master Stack 和 一个 Slave Stack
-    // Stack<Integer> masterStack = null;
-    // Stack<Integer> slaveStack = null;
-
-    // /** Initialize your data structure here. */
-    // public MyQueue() {
-    //     masterStack = new Stack<>();
-    //     slaveStack = new Stack<>();
-    // }
-    
-    // /** Push element x to the back of queue. */
-    // public void push(int x) {
-    //     while(!slaveStack.isEmpty()) {
-    //         masterStack.push(slaveStack.pop());
-    //     }// 先将 slave 中的元素全部压栈
-    //     masterStack.push(x);
-    // }
-    
-    // /** Removes the element from in front of queue and returns that element. */
-    // public int pop() {
-    //     while(!masterStack.isEmpty()) {
-    //         slaveStack.push(masterStack.pop());
-    //     }
-    //     return slaveStack.pop();
-    // }
-    
-    // /** Get the front element. */
-    // public int peek() {
-    //     while(!masterStack.isEmpty()) {
-    //         slaveStack.push(masterStack.pop());
-    //     }
-    //     return slaveStack.peek();
-    // }
-    
-    // /** Returns whether the queue is empty. */
-    // public boolean empty() {
-    //     return (masterStack.isEmpty() && slaveStack.isEmpty()); 
-    // }
-
-    // 法二 采用一个作为压入栈， 一个作为弹出栈
-    // 每次压入栈向弹出栈倾倒时， 全部倾倒， 且必须在 弹出栈为空时才能倾倒
+    // 采用一个 master Stack 和 一个 Slave Stack
     Stack<Integer> pushStack = null;
     Stack<Integer> popStack = null;
 
@@ -70,35 +30,75 @@ class MyQueue {
     
     /** Push element x to the back of queue. */
     public void push(int x) {
+        while(!popStack.isEmpty()) {
+            pushStack.push(popStack.pop());
+        }
         pushStack.push(x);
-        push2Pop();
     }
     
     /** Removes the element from in front of queue and returns that element. */
     public int pop() {
-        push2Pop();
+        while(!pushStack.isEmpty()) {
+            popStack.push(pushStack.pop());
+        }
         return popStack.pop();
     }
     
     /** Get the front element. */
     public int peek() {
-        push2Pop();
-        return popStack.peek();
+        int res = pop();
+        popStack.push(res);
+        return res;
+        
     }
     
     /** Returns whether the queue is empty. */
     public boolean empty() {
-        return (pushStack.isEmpty() && popStack.isEmpty()); 
+        return pushStack.isEmpty() && popStack.isEmpty();
     }
 
-    // 倾倒函数
-    private void push2Pop() {
-        if(popStack.isEmpty()) {
-            while(!pushStack.isEmpty()) {
-                popStack.push(pushStack.pop());
-            }
-        }
-    }
+    // 法二 采用一个作为压入栈， 一个作为弹出栈
+    // 每次压入栈向弹出栈倾倒时， 全部倾倒， 且必须在 弹出栈为空时才能倾倒
+    // Stack<Integer> pushStack = null;
+    // Stack<Integer> popStack = null;
+
+    // /** Initialize your data structure here. */
+    // public MyQueue() {
+    //     pushStack = new Stack<>();
+    //     popStack = new Stack<>();
+    // }
+    
+    // /** Push element x to the back of queue. */
+    // public void push(int x) {
+    //     pushStack.push(x);
+    //     push2Pop();
+    // }
+    
+    // /** Removes the element from in front of queue and returns that element. */
+    // public int pop() {
+    //     push2Pop();
+    //     return popStack.pop();
+    // }
+    
+    // /** Get the front element. */
+    // public int peek() {
+    //     push2Pop();
+    //     return popStack.peek();
+    // }
+    
+    // /** Returns whether the queue is empty. */
+    // public boolean empty() {
+    //     return (pushStack.isEmpty() && popStack.isEmpty()); 
+    // }
+
+    // // 倾倒函数
+    // private void push2Pop() {
+    //     if(popStack.isEmpty()) {
+    //         while(!pushStack.isEmpty()) {
+    //             popStack.push(pushStack.pop());
+    //         }
+    //     }
+    // }
 }
 
 /**
