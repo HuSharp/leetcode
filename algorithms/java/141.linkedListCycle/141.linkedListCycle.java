@@ -1,10 +1,12 @@
+import java.util.HashSet;
+
 /*
  * @Descripttion: 
  * @version: 
  * @Author: HuSharp
  * @Date: 2020-11-16 10:45:37
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-16 10:54:34
+ * @LastEditTime: 2020-11-18 22:59:34
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -26,7 +28,7 @@
  * }
  */
 public class Solution {
-    public boolean hasCycle(ListNode head) {
+    public boolean hasCycle_1(ListNode head) {
         if(head == null) {
             return false;
         }
@@ -44,17 +46,25 @@ public class Solution {
         }
         return false;
     }
+
+    // set 表，记录放入点
+    public boolean hasCycle(ListNode head) {
+        if(head == null) {
+            return false;
+        }
+
+        HashSet<ListNode> set = new HashSet<>();
+        while(head != null) {
+            if(set.contains(head)) {
+                return true;
+            }
+            set.add(head);
+            head = head.next;
+        }
+        return false;
+    }
 }
 // @lc code=end
-
-
-
-
-
-
-
-
-
 
 
 
