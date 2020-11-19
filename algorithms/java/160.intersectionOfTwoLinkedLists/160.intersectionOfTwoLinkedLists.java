@@ -1,10 +1,12 @@
+import java.util.HashSet;
+
 /*
  * @Descripttion: 
  * @version: 
  * @Author: HuSharp
  * @Date: 2020-11-17 23:02:11
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-17 23:59:16
+ * @LastEditTime: 2020-11-19 20:07:34
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -26,61 +28,87 @@
  * }
  */
 public class Solution {
-    // public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-    //     // 先消除 A 和 B 的长度差， 然后让 长的 先走 长度差步
-    //     // 可以转换为 先让长短一起走， 当短的走到头时， 再让短的指向长的头结点
-    //     // 继续走， 当长的走到头时， 此时 短的现位置即为让长的先走的长度差步
-    //     if(headA == null || headB == null) {
-    //         return null;
-    //     }
 
-    //     ListNode curA = headA;
-    //     ListNode curB = headB;
-    //     while(curA != null && curB != null) {
-    //         curA = curA.next;
-    //         curB = curB.next;
-    //     } // 至此 得到短的路径长度
-    //     boolean longIsA = false;
-    //     if(curA != null) {//A 为长
-    //         longIsA = true;
-    //         curB = headA;
-    //     } else {// B 为长
-    //         curA = headB;
-    //     }
-    //     if(longIsA) {
-    //         while(curA != null) {
-    //             curA = curA.next;
-    //             curB = curB.next;
-    //         }// 至此， curB 指向 A 的开始点
-    //         curA = headB;
-    //         while(curA != curB && curA != null) {
-    //             curA = curA.next;
-    //             curB = curB.next;
-    //         }
-    //         if(curA == null) {
-    //             return null;
-    //         } else {
-    //             return curA;
-    //         }
-    //     } else {
-    //         while(curB != null) {
-    //             curB = curB.next;
-    //             curA = curA.next;
-    //         }// 至此， curA 指向 B的开始点
-    //         curB = headA;
-    //         while(curB != curA && curB != null) {
-    //             curA = curA.next;
-    //             curB = curB.next;
-    //         }
-    //         if(curB == null) {
-    //             return null;
-    //         } else {
-    //             return curB;
-    //         }
-    //     }
-    // }
-    // 记录长度版本
+    // 采用 Set 思想
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        if(headA == null || headB == null) {
+            return null;
+        }
+
+        ListNode curA = headA;
+        ListNode curB = headB;
+
+        HashSet<ListNode> set = new HashSet<>();
+        while(curA != null) {
+            set.add(curA);
+            curA = curA.next;
+        }
+        while(curB != null) {
+            if(set.contains(curB)) {
+                return curB;
+            }
+            curB = curB.next;
+        }
+        return null;
+        
+    }
+
+
+    public ListNode getIntersectionNode_2(ListNode headA, ListNode headB) {
+        // 先消除 A 和 B 的长度差， 然后让 长的 先走 长度差步
+        // 可以转换为 先让长短一起走， 当短的走到头时， 再让短的指向长的头结点
+        // 继续走， 当长的走到头时， 此时 短的现位置即为让长的先走的长度差步
+        if(headA == null || headB == null) {
+            return null;
+        }
+
+        ListNode curA = headA;
+        ListNode curB = headB;
+        while(curA != null && curB != null) {
+            curA = curA.next;
+            curB = curB.next;
+        } // 至此 得到短的路径长度
+        boolean longIsA = false;
+        if(curA != null) {//A 为长
+            longIsA = true;
+            curB = headA;
+        } else {// B 为长
+            curA = headB;
+        }
+        if(longIsA) {
+            while(curA != null) {
+                curA = curA.next;
+                curB = curB.next;
+            }// 至此， curB 指向 A 的开始点
+            curA = headB;
+            while(curA != curB && curA != null) {
+                curA = curA.next;
+                curB = curB.next;
+            }
+            if(curA == null) {
+                return null;
+            } else {
+                return curA;
+            }
+        } else {
+            while(curB != null) {
+                curB = curB.next;
+                curA = curA.next;
+            }// 至此， curA 指向 B的开始点
+            curB = headA;
+            while(curB != curA && curB != null) {
+                curA = curA.next;
+                curB = curB.next;
+            }
+            if(curB == null) {
+                return null;
+            } else {
+                return curB;
+            }
+        }
+    }
+    // 记录长度版本
+    public ListNode getIntersectionNode_1(ListNode headA, ListNode headB) {
         if(headA == null || headB == null) {
             return null;
         }
@@ -114,6 +142,8 @@ public class Solution {
         return cur1;// 相等就返回该节点， 不等就返回 null
         
     }
+
+    
 }
 // @lc code=end
 
