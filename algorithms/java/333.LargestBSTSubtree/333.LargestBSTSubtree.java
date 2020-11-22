@@ -1,10 +1,11 @@
+package Test_1;
 /*
  * @Descripttion: 
  * @version: 
  * @Author: HuSharp
  * @Date: 2020-11-22 13:05:03
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-22 13:43:28
+ * @LastEditTime: 2020-11-22 21:07:28
  * @@Email: 8211180515@csu.edu.cn
  */
 import java.util.Scanner;
@@ -31,7 +32,7 @@ public class Main {
     //      2、为右子树
     //      3、为当前树， 需要满足的情况是 左子树 max < root < 右子树 min
     // 因此需要知道 树的 size， 树的max 和 min
-    class ReturnType {
+    static class ReturnType {
         public TreeNode maxBSTHead;
         public int maxBSTSize;
         public int max;
@@ -45,7 +46,7 @@ public class Main {
         }
     }
 
-    private ReturnType process(TreeNode root) {
+    private static ReturnType process(TreeNode root) {
         if(root == null) {
             return new ReturnType(null, 0, Integer.MIN_VALUE, Integer.MAX_VALUE);
         }
@@ -74,7 +75,7 @@ public class Main {
         return new ReturnType(maxHead, maxSize, max, min);
     }
 
-    public TreeNode getMaxBST(TreeNode root) {
+    public static TreeNode getMaxBST(TreeNode root) {
         return process(root).maxBSTHead;
     }
 
@@ -92,9 +93,9 @@ public class Main {
 
         nodes = makeTree(scan, n, nodes);
 
-        Main solution = new Main();
-        TreeNode maxBSTNode = solution.getMaxBST(nodes[1]);
+        TreeNode maxBSTNode = getMaxBST(nodes[rootValue]);
 
+        // System.err.println(nodes[rootValue].val);
         System.out.println(maxBSTNode.val);
         scan.close();
     }
@@ -102,12 +103,12 @@ public class Main {
     public static TreeNode[] makeTree(Scanner scan, int n, TreeNode[] nodes) {
 
         for (int i = 1; i <= n; i++) {
-            int fa = scan.nextInt();
+            int father = scan.nextInt();
             int left = scan.nextInt();
             int right = scan.nextInt();
 
-            nodes[fa].left = (left == 0) ? null : nodes[left];
-            nodes[fa].right = (right == 0) ? null : nodes[right];
+            nodes[father].left = (left == 0) ? null : nodes[left];
+            nodes[father].right = (right == 0) ? null : nodes[right];
         }
         return nodes;
     }
