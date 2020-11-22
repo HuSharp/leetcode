@@ -31,3 +31,5 @@ LeetCode
 | 226  | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Java](./algorithms/java/226.invertBinaryTree)               | Easy       | [Java](./algorithms/java/226.invertBinaryTree)               |
 | 232  | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Java](./algorithms/java/232.implementQueueUsingStacks)      | Easy       | [Java](./algorithms/java/232.implementQueueUsingStacks)      |
 | 234  | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Java](./algorithms/java/234.palindromeLinkedList)           | Easy       | [Java](./algorithms/java/234.palindromeLinkedList)           |
+| 333  | [Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree) |                                                              |            |                                                              |
+| 543  | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | [Java](./algorithms/java/543.diameterOfBinaryTree)           | Easy       |                                                              |
