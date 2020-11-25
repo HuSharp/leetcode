@@ -1,10 +1,13 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 /*
  * @Descripttion: 
  * @version: 
  * @Author: HuSharp
  * @Date: 2020-11-23 18:07:59
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-23 18:16:51
+ * @LastEditTime: 2020-11-25 17:05:27
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -30,7 +33,8 @@
  * }
  */
 class Solution {
-    public boolean isSymmetric(TreeNode root) {
+    // 递归
+    public boolean isSymmetric_1(TreeNode root) {
         if(root == null) {
             return true;
         }
@@ -52,6 +56,38 @@ class Solution {
             return false;
         }
         return isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
+    }
+
+    // queue
+    public boolean isSymmetric(TreeNode root) {
+        if(root == null) {
+            return true;
+        }
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        
+        queue.add(root.left);
+        queue.add(root.right);
+        while(!queue.isEmpty()) {
+            TreeNode left = queue.poll();
+            TreeNode right = queue.poll();
+            if(left == null && right == null) {
+                continue;
+            }
+            if(left == null || right == null) {
+                return false;
+            }
+            if(left.val != right.val) {
+                return false;
+            }
+
+            queue.add(left.left);
+            queue.add(right.right);
+
+            queue.add(left.right);
+            queue.add(right.left);
+        }
+
+        return true;// 至此都没有返回 false
     }
 }
 // @lc code=end
