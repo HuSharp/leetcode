@@ -8,7 +8,7 @@ import java.util.Set;
  * @Author: HuSharp
  * @Date: 2020-11-25 00:00:25
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-25 00:43:20
+ * @LastEditTime: 2020-11-27 14:03:50
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -89,7 +89,7 @@ class Solution {
         if(right == root.val) {
             right = findSecondMinimumValue(root.right);
         }
-
+        // 至此 表示是不相等的数中找 min
         if(left != -1 && right != -1) {
             return Math.min(left, right);
         }

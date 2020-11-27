@@ -4,7 +4,7 @@
  * @Author: HuSharp
  * @Date: 2020-11-24 23:25:21
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-24 23:35:17
+ * @LastEditTime: 2020-11-27 13:28:33
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -58,13 +58,15 @@ class Solution {
 
     //     return;
     // }
+
+    
     // 进行直接返回
     public int sumOfLeftLeaves(TreeNode root) {
         if(root == null) {
             return 0;
         }
         // 只需对该点的左节点进行判断， 判断是否为 叶子节点
-        if(isLeaf(root.left)) {// 若是， 那么直接返回即可， 因为左边已经到左子树了
+        if(isLeaf(root.left)) {// 若是， 那么直接返回即可， 因为左边已经到左节点了
             return root.left.val + sumOfLeftLeaves(root.right);
         }
         return sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
