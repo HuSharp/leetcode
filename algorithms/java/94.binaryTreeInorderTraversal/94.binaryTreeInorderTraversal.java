@@ -8,7 +8,7 @@ import java.util.Stack;
  * @Author: HuSharp
  * @Date: 2020-11-26 19:40:12
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-26 19:58:42
+ * @LastEditTime: 2020-12-04 16:53:51
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -43,11 +43,14 @@ class Solution {
         }
         
         TreeNode cur = root;
-        while(!stack.isEmpty() || cur != null) {
+        while(true) {
             while(cur != null) {
                 stack.push(cur);
                 cur = cur.left;
             }// 至此 找到左子链
+            if(stack.isEmpty()) {
+                break;
+            }
             TreeNode node = stack.pop();
             list.add(node.val);
             cur = node.right;
