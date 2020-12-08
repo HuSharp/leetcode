@@ -6,7 +6,7 @@ import java.util.HashMap;
  * @Author: HuSharp
  * @Date: 2020-12-05 17:32:37
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-12-05 18:17:00
+ * @LastEditTime: 2020-12-08 23:07:27
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -32,33 +32,34 @@ import java.util.HashMap;
  * }
  */
 class Solution {
-    // 从 pre 中按顺序找， 作为当前的 root
     // post 标记范围
     // 存放中序中各点的位置， 用来找到左右子树范围
-    HashMap<Integer, Integer> inOrderMap = new HashMap<>();
+    HashMap<Integer, Integer> mapInOrder = new HashMap<>();
     public TreeNode buildTree(int[] preorder, int[] inorder) {
         
-        int posRoot = 0;
-        // 存放中序位置
-        for ( posRoot = 0; posRoot < inorder.length; posRoot++) {
-            inOrderMap.put(inorder[posRoot], posRoot);
+        // 建立遍历中序到的当前值在先序中的位置
+        // 这是由于不含重复数字
+        int pos = 0;
+        for (int i : inorder) {
+            mapInOrder.put(i, pos++);
         }
-
-        return rebuildTree(preorder, inorder, 0, 0, inorder.length - 1);
+        return buildTree(preorder, inorder, 0, 0, inorder.length - 1);
     }
 
-    private TreeNode rebuildTree(int[] pre, int[] pos, int preL, int inL, int inR)  {
-        if(inL > inR) {
+    // Inpos 表示中序的第 pos 个， preLeftL 表示先序的最左侧， preRightR表示先序的最右侧
+    private TreeNode buildTree(int[] preorder, int[] inorder, int prePos, int inLeftL, int inRightR) {
+        if(inLeftL > inRightR) {
             return null;
         }
-        // 取根节点
-        TreeNode root = new TreeNode(pre[preL]);
-        int indexRoot = inOrderMap.get(pre[preL]);
-        int treeSize = indexRoot - inL;// 取左子树大小
-        root.left = rebuildTree(pre, pos, preL+1, inL, indexRoot-1);
-        root.right = rebuildTree(pre, pos, preL+treeSize+1, indexRoot+1, inR);
+        // 首先由 prePos 得到当前 root 值 所在 中序的位置
+        int inPos = mapInOrder.get(preorder[prePos]);
+        TreeNode rootNode = new TreeNode(inorder[inPos]);
 
-        return root;
+        int treeSize = inPos - inLeftL;
+        rootNode.left = buildTree(preorder, inorder, prePos+1, inLeftL, inPos-1);
+        rootNode.right = buildTree(preorder, inorder, prePos+treeSize+1, inPos+1, inRightR);
+        
+        return rootNode;
     }
 }
 // @lc code=end

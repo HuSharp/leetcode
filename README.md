@@ -46,7 +46,7 @@ LeetCode
 | 151  | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/) |                                                              | Medium     |                                                              |
 | 155  | [Min Stack](https://leetcode.com/problems/min-stack/)        | [Java](./algorithms/java/155.minStack)                       | Easy       | [Java](./algorithms/java/155.minStack)                       |
 | 160  | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Java](./algorithms/java/160.intersectionOfTwoLinkedLists)   | Easy       | [Java](./algorithms/java/160.intersectionOfTwoLinkedLists)   |
-| 206  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./algorithms/java/20.validParentheses)                | Easy       | [Java](./algorithms/java/20.validParentheses)                |
+| 206  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./algorithms/java/206.reverseLinkedList)              | Easy       | [Java](./algorithms/java/206.reverseLinkedList)              |
 | 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) |                                                              | Medium     |                                                              |
 | 225  | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/206.reverseLinkedList)              | Medium     | [Java](./algorithms/java/206.reverseLinkedList)              |
 | 226  | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Java](./algorithms/java/226.invertBinaryTree)               | Easy       | [Java](./algorithms/java/226.invertBinaryTree)               |
@@ -54,7 +54,7 @@ LeetCode
 | 234  | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Java](./algorithms/java/234.palindromeLinkedList)           | Easy       | [Java](./algorithms/java/234.palindromeLinkedList)           |
 | 239  | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) |                                                              | hard       |                                                              |
 | 240  | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [Java](./algorithms/java/240.searchA2DMatrixIi)              | Medium     | [Java](./algorithms/java/240.searchA2DMatrixIi)              |
-| 260  | [Single Number III](https://leetcode.com/problems/single-number-iii/description/) |                                                              | Medium     |                                                              |
+| 260  | [Single Number III](https://leetcode.com/problems/single-number-iii/description/) | [Java](./algorithms/java/260.singleNumberIii)                | Medium     | [Java](./algorithms/java/260.singleNumberIii)                |
 | 283  | [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) | [Java](./algorithms/java/283.moveZeroes)                     | Easy       | [Java](./algorithms/java/283.moveZeroes)                     |
 | 287  | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [Java](./algorithms/java/287.findTheDuplicateNumber)         | Medium     | [Java](./algorithms/java/287.findTheDuplicateNumber)         |
 | 300  | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) |                                                              | Medium     |                                                              |
@@ -69,3 +69,17 @@ LeetCode
 | 633  | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) |                                                              | Medium     |                                                              |
 | 637  | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/) | [Java](./algorithms/java/637.averageOfLevelsInBinaryTree)    | Easy       | [Java](./algorithms/java/637.averageOfLevelsInBinaryTree)    |
 | 671  | [Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/) | [Java](./algorithms/java/671.secondMinimumNodeInABinaryTree) | Easy       | [Java](./algorithms/java/671.secondMinimumNodeInABinaryTree) |
+
+
+
+### CodingInterviews Algorithm
+
+
+| #    | Title                                                        | Solution | Difficulty | Analyse |
+| ---- | ------------------------------------------------------------ | -------- | ---------- | ------- |
+| 7    | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |          | Medium     |         |
+| 27   | [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) |          | Easy       |         |
+| 28   | [剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) |          | Easy       |         |
+|      |                                                              |          |            |         |
+|      |                                                              |          |            |         |
+
