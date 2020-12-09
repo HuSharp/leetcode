@@ -77,9 +77,12 @@ LeetCode
 
 | #    | Title                                                        | Solution | Difficulty | Analyse |
 | ---- | ------------------------------------------------------------ | -------- | ---------- | ------- |
+| 3    | [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) |          | Easy       |         |
 | 7    | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |          | Medium     |         |
 | 27   | [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) |          | Easy       |         |
 | 28   | [剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) |          | Easy       |         |
 |      |                                                              |          |            |         |
-|      |                                                              |          |            |         |
+| 33   | [剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) |          | Medium     |         |
+| 34   | [剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) |          | Medium     |         |
+| 55-I | [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) |          | Easy       |         |
 
