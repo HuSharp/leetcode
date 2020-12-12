@@ -59,6 +59,7 @@ LeetCode
 | 287  | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [Java](./algorithms/java/287.findTheDuplicateNumber)         | Medium     | [Java](./algorithms/java/287.findTheDuplicateNumber)         |
 | 300  | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) |                                                              | Medium     |                                                              |
 | 333  | [Largest BST Subtree](https://leetcode.com/problems/largest-bst-subtree) | [Java](./algorithms/java/333.LargestBSTSubtree)              | Medium     | [Java](./algorithms/java/333.LargestBSTSubtree)              |
+| 343  | [Integer Break](https://leetcode.com/problems/integer-break/description/) |                                                              | Medium     |                                                              |
 | 347  | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/description/) | [Java](./algorithms/java/347.topKFrequentElements)           | Medium     | [Java](./algorithms/java/347.topKFrequentElements)           |
 | 387  | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/description/) |                                                              | Easy       |                                                              |
 | 404  | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/description/) | [Java](./algorithms/java/404.sumOfLeftLeaves)                | Easy       | [Java](./algorithms/java/404.sumOfLeftLeaves)                |
@@ -75,15 +76,22 @@ LeetCode
 ### CodingInterviews Algorithm
 
 
-| #    | Title                                                        | Solution | Difficulty | Analyse |
-| ---- | ------------------------------------------------------------ | -------- | ---------- | ------- |
-| 3    | [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) |          | Easy       |         |
-| 7    | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |          | Medium     |         |
-| 27   | [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) |          | Easy       |         |
-| 28   | [剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) |          | Easy       |         |
-|      |                                                              |          |            |         |
-| 33   | [剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) |          | Medium     |         |
-| 34   | [剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) |          | Medium     |         |
-| 55-I | [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) |          | Easy       |         |
-| 51   | [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |          | Hard       |         |
+| #     | Title                                                        | Solution | Difficulty | Analyse |
+| ----- | ------------------------------------------------------------ | -------- | ---------- | ------- |
+| 3     | [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) |          | Easy       |         |
+| 5     | [剑指 Offer 05. 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) |          | Easy       |         |
+| 7     | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |          | Medium     |         |
+| 10_I  | [剑指 Offer 10- I. 斐波那契数列](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/) |          | Easy       |         |
+| 10_II | [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) |          | Easy       |         |
+| 11    | [剑指 Offer 11. 旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |          | Easy       |         |
+| 27    | [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) |          | Easy       |         |
+| 28    | [剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) |          | Easy       |         |
+|       |                                                              |          |            |         |
+| 33    | [剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) |          | Medium     |         |
+| 34    | [剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) |          | Medium     |         |
+|       |                                                              |          |            |         |
+| 51    | [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |          | Hard       |         |
+| 53-I  | [剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) |          | Easy       |         |
+| 55-I  | [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) |          | Easy       |         |
+| 63    | [剑指 Offer 63. 股票的最大利润](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) |          | Medium     |         |
 
