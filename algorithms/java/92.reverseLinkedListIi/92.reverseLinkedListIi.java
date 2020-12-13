@@ -4,7 +4,7 @@
  * @Author: HuSharp
  * @Date: 2020-11-15 16:34:09
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-15 18:31:15
+ * @LastEditTime: 2020-12-13 23:38:42
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -54,6 +54,44 @@ class Solution {
         reHead.next = next;
 
         return headFirst.next;
+    }
+
+    // 复习重写
+    public ListNode reverseBetween_2(ListNode head, int m, int n) {
+        // 首先需要先到达反转开始点
+        if(m == n || head == null) {
+            return head;
+        }
+        // 预置头指针
+        ListNode preHead = new ListNode();
+        preHead.next = head;
+
+        int pos = 1;
+        ListNode left = preHead;
+        while(pos != m) {
+            left = left.next;
+            pos++;
+        } // 至此 到达头部
+        
+        ListNode reLeft = left.next;
+
+        ListNode reHead = reLeft;
+        ListNode pre = null;
+        ListNode next = reLeft;
+
+        while(pos != n+1) {
+            next = reLeft.next;
+            reLeft.next = pre;
+            pre = reLeft;
+            reLeft = next;
+            pos++;
+        }// 至此 翻转中间部分， 且 reLeft 到达翻转右边界右侧，pre 为翻转右边界
+        // System.out.println(reLeft.val);
+        left.next = pre;
+        reHead.next = reLeft;
+
+        return preHead.next;
+
     }
 
 }
