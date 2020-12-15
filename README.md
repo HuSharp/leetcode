@@ -15,10 +15,13 @@ LeetCode
 |      |                                                              |                                                              |            |                                                              |
 |      |                                                              |                                                              |            |                                                              |
 | 7    | [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) |                                                              | Easy       |                                                              |
+| 11   |                                                              |                                                              |            |                                                              |
 |      |                                                              |                                                              |            |                                                              |
 | 19   | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [Java](./algorithms/java/19.removeNthNodeFromEndOfList)      | Easy       | [Java](./algorithms/java/19.removeNthNodeFromEndOfList)      |
 | 20   | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | [Java](./algorithms/java/20.validParentheses)                | Easy       | [Java](./algorithms/java/20.validParentheses)                |
 | 21   | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [Java](./algorithms/java/21.mergeTwoSortedLists)             | Easy       | [Java](./algorithms/java/20.validParentheses)                |
+| 46   | [Permutations](https://leetcode.com/problems/permutations/description/) |                                                              | Medium     |                                                              |
+| 47   | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) |                                                              | Medium     |                                                              |
 | 53   | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) |                                                              |            |                                                              |
 | 54   | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/description/) |                                                              | Medium     |                                                              |
 |      |                                                              |                                                              |            |                                                              |
@@ -51,6 +54,7 @@ LeetCode
 | 151  | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/description/) |                                                              | Medium     |                                                              |
 | 155  | [Min Stack](https://leetcode.com/problems/min-stack/)        | [Java](./algorithms/java/155.minStack)                       | Easy       | [Java](./algorithms/java/155.minStack)                       |
 | 160  | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Java](./algorithms/java/160.intersectionOfTwoLinkedLists)   | Easy       | [Java](./algorithms/java/160.intersectionOfTwoLinkedLists)   |
+| 167  | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) |                                                              | Easy       |                                                              |
 | 206  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./algorithms/java/206.reverseLinkedList)              | Easy       | [Java](./algorithms/java/206.reverseLinkedList)              |
 | 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) |                                                              | Medium     |                                                              |
 | 225  | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/206.reverseLinkedList)              | Medium     | [Java](./algorithms/java/206.reverseLinkedList)              |
@@ -94,9 +98,10 @@ LeetCode
 |       |                                                              |          |            |         |
 | 33    | [剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) |          | Medium     |         |
 | 34    | [剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) |          | Medium     |         |
-|       |                                                              |          |            |         |
+| 37    | [剑指 Offer 37. 序列化二叉树](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/) |          | Hard       |         |
 | 51    | [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |          | Hard       |         |
 | 53-I  | [剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) |          | Easy       |         |
 | 55-I  | [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) |          | Easy       |         |
+| 57    | [剑指 Offer 57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/) |          | Easy       |         |
 | 63    | [剑指 Offer 63. 股票的最大利润](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) |          | Medium     |         |
 
