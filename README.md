@@ -11,8 +11,8 @@ LeetCode
 | 1    | [Two Sum](https://leetcode.com/problems/two-sum/)            | [Java](./algorithms/java/1.TwoSum)                           | Easy       | [Java](./algorithms/java/1.TwoSum)                           |
 | 2    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Java](./algorithms/java/2.addTwoNumbers)                    | Medium     | [Java](./algorithms/java/2.addTwoNumbers)                    |
 | 3    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) |                                                              | Medium     |                                                              |
-|      |                                                              |                                                              |            |                                                              |
-|      |                                                              |                                                              |            |                                                              |
+| 4    | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) |                                                              | Hard       |                                                              |
+| 5    | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/description/) |                                                              | Medium     |                                                              |
 |      |                                                              |                                                              |            |                                                              |
 | 7    | [Reverse Integer](https://leetcode.com/problems/reverse-integer/description/) |                                                              | Easy       |                                                              |
 | 11   |                                                              |                                                              |            |                                                              |
@@ -55,14 +55,14 @@ LeetCode
 | 155  | [Min Stack](https://leetcode.com/problems/min-stack/)        | [Java](./algorithms/java/155.minStack)                       | Easy       | [Java](./algorithms/java/155.minStack)                       |
 | 160  | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Java](./algorithms/java/160.intersectionOfTwoLinkedLists)   | Easy       | [Java](./algorithms/java/160.intersectionOfTwoLinkedLists)   |
 | 167  | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) |                                                              | Easy       |                                                              |
-| 206  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./algorithms/java/206.reverseLinkedList)              | Easy       | [Java](./algorithms/java/206.reverseLinkedList)              |
+| 206  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./algorithms/java/206.reverseLinkedList.java)         | Easy       | [Java](./algorithms/java/206.reverseLinkedList.md)           |
 | 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) |                                                              | Medium     |                                                              |
 | 225  | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/206.reverseLinkedList)              | Medium     | [Java](./algorithms/java/206.reverseLinkedList)              |
 | 226  | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | [Java](./algorithms/java/226.invertBinaryTree)               | Easy       | [Java](./algorithms/java/226.invertBinaryTree)               |
 | 232  | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/) | [Java](./algorithms/java/232.implementQueueUsingStacks)      | Easy       | [Java](./algorithms/java/232.implementQueueUsingStacks)      |
 | 234  | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/) | [Java](./algorithms/java/234.palindromeLinkedList)           | Easy       | [Java](./algorithms/java/234.palindromeLinkedList)           |
 | 239  | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) |                                                              | hard       |                                                              |
-| 240  | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [Java](./algorithms/java/240.searchA2DMatrixIi)              | Medium     | [Java](./algorithms/java/240.searchA2DMatrixIi)              |
+| 240  | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [Java](./algorithms/java/240.searchA2DMatrixIi.java)         | Medium     | [Java](./algorithms/java/240.searchA2DMatrixIi.md)           |
 | 260  | [Single Number III](https://leetcode.com/problems/single-number-iii/description/) | [Java](./algorithms/java/260.singleNumberIii)                | Medium     | [Java](./algorithms/java/260.singleNumberIii)                |
 | 283  | [Move Zeroes](https://leetcode.com/problems/move-zeroes/description/) | [Java](./algorithms/java/283.moveZeroes)                     | Easy       | [Java](./algorithms/java/283.moveZeroes)                     |
 | 287  | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [Java](./algorithms/java/287.findTheDuplicateNumber)         | Medium     | [Java](./algorithms/java/287.findTheDuplicateNumber)         |
@@ -85,23 +85,25 @@ LeetCode
 ### CodingInterviews Algorithm
 
 
-| #     | Title                                                        | Solution | Difficulty | Analyse |
-| ----- | ------------------------------------------------------------ | -------- | ---------- | ------- |
-| 3     | [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) |          | Easy       |         |
-| 5     | [剑指 Offer 05. 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) |          | Easy       |         |
-| 7     | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |          | Medium     |         |
-| 10_I  | [剑指 Offer 10- I. 斐波那契数列](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/) |          | Easy       |         |
-| 10_II | [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) |          | Easy       |         |
-| 11    | [剑指 Offer 11. 旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |          | Easy       |         |
-| 27    | [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) |          | Easy       |         |
-| 28    | [剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) |          | Easy       |         |
-|       |                                                              |          |            |         |
-| 33    | [剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) |          | Medium     |         |
-| 34    | [剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) |          | Medium     |         |
-| 37    | [剑指 Offer 37. 序列化二叉树](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/) |          | Hard       |         |
-| 51    | [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |          | Hard       |         |
-| 53-I  | [剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) |          | Easy       |         |
-| 55-I  | [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) |          | Easy       |         |
-| 57    | [剑指 Offer 57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/) |          | Easy       |         |
-| 63    | [剑指 Offer 63. 股票的最大利润](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) |          | Medium     |         |
+| #     | Title                                                        | Solution                                                     | Difficulty | Analyse                                                      |
+| ----- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
+| 3     | [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/) | [Java](./CodingInterviews/No3_findRepeatNumber/No3_findRepeatNumber.java) | Easy       | [Java](./CodingInterviews/No3_findRepeatNumber/No3_findRepeatNumber.md) |
+| 4     | [剑指 Offer 04. 二维数组中的查找](https://leetcode-cn.com/problems/er-wei-shu-zu-zhong-de-cha-zhao-lcof/) | [Java](./algorithms/java/240.searchA2DMatrixIi.java)         | Medium     | [Java](./algorithms/java/240.searchA2DMatrixIi.md)           |
+| 5     | [剑指 Offer 05. 替换空格](https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/) | [Java](./CodingInterviews/No5_replaceSpace/No5_replaceSpace.java) | Easy       | [Java](./CodingInterviews/No5_replaceSpace/No5_replaceSpace.md) |
+| 6     | [剑指 Offer 06. 从尾到头打印链表](https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/) | [Java](./algorithms/java/206.reverseLinkedList.java)         | Easy       | [Java](./algorithms/java/206.reverseLinkedList.md)           |
+| 7     | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) |                                                              | Medium     |                                                              |
+| 10_I  | [剑指 Offer 10- I. 斐波那契数列](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/) |                                                              | Easy       |                                                              |
+| 10_II | [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) |                                                              | Easy       |                                                              |
+| 11    | [剑指 Offer 11. 旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |                                                              | Easy       |                                                              |
+| 27    | [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) |                                                              | Easy       |                                                              |
+| 28    | [剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) |                                                              | Easy       |                                                              |
+|       |                                                              |                                                              |            |                                                              |
+| 33    | [剑指 Offer 33. 二叉搜索树的后序遍历序列](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-hou-xu-bian-li-xu-lie-lcof/) |                                                              | Medium     |                                                              |
+| 34    | [剑指 Offer 34. 二叉树中和为某一值的路径](https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/) |                                                              | Medium     |                                                              |
+| 37    | [剑指 Offer 37. 序列化二叉树](https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof/) |                                                              | Hard       |                                                              |
+| 51    | [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/) |                                                              | Hard       |                                                              |
+| 53-I  | [剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/) |                                                              | Easy       |                                                              |
+| 55-I  | [剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof/) |                                                              | Easy       |                                                              |
+| 57    | [剑指 Offer 57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/) |                                                              | Easy       |                                                              |
+| 63    | [剑指 Offer 63. 股票的最大利润](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) |                                                              | Medium     |                                                              |
 
