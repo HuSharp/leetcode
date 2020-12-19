@@ -6,7 +6,7 @@ import java.util.HashMap;
  * @Author: HuSharp
  * @Date: 2020-12-05 17:32:37
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-12-08 23:07:27
+ * @LastEditTime: 2020-12-19 23:10:40
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -35,32 +35,34 @@ class Solution {
     // post 标记范围
     // 存放中序中各点的位置， 用来找到左右子树范围
     HashMap<Integer, Integer> mapInOrder = new HashMap<>();
+
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        
         // 建立遍历中序到的当前值在先序中的位置
         // 这是由于不含重复数字
-        int pos = 0;
-        for (int i : inorder) {
-            mapInOrder.put(i, pos++);
+        for (int i = 0; i < inorder.length; i++) {
+            mapInOrder.put(inorder[i], i);
         }
+
         return buildTree(preorder, inorder, 0, 0, inorder.length - 1);
-    }
+
+    }    
 
     // Inpos 表示中序的第 pos 个， preLeftL 表示先序的最左侧， preRightR表示先序的最右侧
     private TreeNode buildTree(int[] preorder, int[] inorder, int prePos, int inLeftL, int inRightR) {
         if(inLeftL > inRightR) {
             return null;
         }
-        // 首先由 prePos 得到当前 root 值 所在 中序的位置
+
         int inPos = mapInOrder.get(preorder[prePos]);
         TreeNode rootNode = new TreeNode(inorder[inPos]);
-
         int treeSize = inPos - inLeftL;
+
         rootNode.left = buildTree(preorder, inorder, prePos+1, inLeftL, inPos-1);
-        rootNode.right = buildTree(preorder, inorder, prePos+treeSize+1, inPos+1, inRightR);
-        
+        rootNode.right = buildTree(preorder, inorder, prePos + treeSize + 1, inPos+1, inRightR);
+    
         return rootNode;
-    }
+    }    
+
 }
 // @lc code=end
 
