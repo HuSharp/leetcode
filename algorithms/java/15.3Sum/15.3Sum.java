@@ -10,7 +10,7 @@ import java.util.Map;
  * @Author: HuSharp
  * @Date: 2020-12-21 17:48:10
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-12-21 22:40:36
+ * @LastEditTime: 2020-12-22 23:31:06
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -72,9 +72,8 @@ class Solution {
             }
 
             int sum = -1 * nums[i];
-            int left = i;
-            int right = nums.length-1;
-            
+            int left = i+1;
+            int right = nums.length-1;  
             
             while(left < right) {
                 if(nums[left] + nums[right] == sum) {
@@ -85,12 +84,14 @@ class Solution {
 
                     lists.add(list);
 
-                    while(left < right && nums[left] == nums[left++]) {
+                    while(left < right && nums[left] == nums[left+1]) {
                         left++;
                     } 
-                    while(left < right && nums[right] == nums[right--]) {
+                    while(left < right && nums[right] == nums[right-1]) {
                         right--;
                     } 
+                    left++;
+                    right--;
                 } else if(nums[left] + nums[right] > sum){
                     right--;
                 } else {
