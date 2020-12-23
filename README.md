@@ -8,7 +8,7 @@ LeetCode
 
 | #    | Title                                                        | Solution                                                     | Difficulty | Analyse                                                      |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------- | ------------------------------------------------------------ |
-| 1    | [Two Sum](https://leetcode.com/problems/two-sum/)            | [Java](./algorithms/java/1.TwoSum)                           | Easy       | [Java](./algorithms/java/1.TwoSum)                           |
+| 1    | [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)     | [Java](./algorithms/java/1.TwoSum)                           | Easy       | [Java](./algorithms/java/1.TwoSum)                           |
 | 2    | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [Java](./algorithms/java/2.addTwoNumbers)                    | Medium     | [Java](./algorithms/java/2.addTwoNumbers)                    |
 | 3    | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) |                                                              | Medium     |                                                              |
 | 4    | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) |                                                              | Hard       |                                                              |
@@ -101,7 +101,7 @@ LeetCode
 | 7     | [剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof/) | [Java](./CodingInterviews/No7_buildTree/No7_buildTree.java)  | Medium     | [Java](./CodingInterviews/No7_buildTree/No7_buildTree.md)    |
 | 10_I  | [剑指 Offer 10- I. 斐波那契数列](https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/) | [Java](./CodingInterviews/No10_I_fib/No10_I_fib.java)        | Easy       | [Java](./CodingInterviews/No10_I_fib/No10_I_fib.java)        |
 | 10_II | [剑指 Offer 10- II. 青蛙跳台阶问题](https://leetcode-cn.com/problems/qing-wa-tiao-tai-jie-wen-ti-lcof/) | [Java](./CodingInterviews/No10_I_fib/No10_I_fib.java)        | Easy       | [Java](./CodingInterviews/No10_I_fib/No10_I_fib.md)          |
-| 11    | [剑指 Offer 11. 旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) |                                                              | Easy       |                                                              |
+| 11    | [剑指 Offer 11. 旋转数组的最小数字](https://leetcode-cn.com/problems/xuan-zhuan-shu-zu-de-zui-xiao-shu-zi-lcof/) | [Java](./CodingInterviews/No11_rotateArr/No11_rotateArr.java) | Easy       | [Java](./CodingInterviews/No11_rotateArr/No11_rotateArr.md)  |
 | 27    | [剑指 Offer 27. 二叉树的镜像](https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/) |                                                              | Easy       |                                                              |
 | 28    | [剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/) |                                                              | Easy       |                                                              |
 |       |                                                              |                                                              |            |                                                              |
