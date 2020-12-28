@@ -4,7 +4,7 @@
  * @Author: HuSharp
  * @Date: 2020-11-29 22:08:04
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-11-29 22:12:30
+ * @LastEditTime: 2020-12-27 14:54:59
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -16,26 +16,28 @@
 // @lc code=start
 class Solution {
     public void sortColors(int[] nums) {
-        partition(nums, 0, nums.length);
+        partition(nums, 0, nums.length-1);
         
     }
 
     // pivot 为 1
     private void partition(int[] nums, int l, int r) {
-        int less = l-1;
-        int more = r;
-        int pos = l;// 当前位置
-        while(pos < more) {
-            if(nums[pos] < 1) {// 为 0 放在左侧
-                swap(nums, ++less, pos++);
+        int left = l-1;
+        int right = r+1;
+
+        int pos = l;
+        while(pos != right) {
+            if(nums[pos] < 1) {
+                swap(nums, ++left, pos++);
             } else if(nums[pos] > 1) {
-                swap(nums, pos, --more);
+                swap(nums, --right, pos);
             } else {
-                pos++;// 相等则指向下一个
+                pos++;
             }
         }
+
     }
-    
+
     private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];
