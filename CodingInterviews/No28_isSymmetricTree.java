@@ -4,7 +4,7 @@
  * @Author: HuSharp
  * @Date: 2020-12-08 23:34:37
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-12-08 23:41:19
+ * @LastEditTime: 2020-12-24 16:41:48
  * @@Email: 8211180515@csu.edu.cn
  */
 package CodingInterviews;
@@ -16,21 +16,23 @@ public class No28_isSymmetricTree {
         }
 
         return isSymmetric(root.left, root.right);
+
     }
 
-    private boolean isSymmetric(TreeNode left, TreeNode right) {
+    public boolean isSymmetric(TreeNode left, TreeNode right) {
         if(left == null && right == null) {
             return true;
         }
-        // 说明其中一个为 null
         if(left == null || right == null) {
             return false;
         }
+
         if(left.val != right.val) {
             return false;
         }
+
         return isSymmetric(left.left, right.right) && isSymmetric(left.right, right.left);
-    } 
+    }
 
     class TreeNode {
         int val;

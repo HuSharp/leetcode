@@ -4,7 +4,7 @@
  * @Author: HuSharp
  * @Date: 2020-12-08 23:27:36
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-12-08 23:30:06
+ * @LastEditTime: 2020-12-24 12:19:32
  * @@Email: 8211180515@csu.edu.cn
  */
 package CodingInterviews;
@@ -13,18 +13,16 @@ public class No27_mirrorTree {
     public TreeNode mirrorTree(TreeNode root) {
         if(root == null) {
             return null;
-        }
-        swapTree(root.left, root.right);
-        mirrorTree(root.left);
-        mirrorTree(root.right);
+        }        
+        
+        TreeNode left = mirrorTree(root.left);
+        TreeNode right = mirrorTree(root.right);
 
-        return root;
-    }
-
-    private void swapTree(TreeNode left, TreeNode right) {
         TreeNode temp = left;
         left = right;
         right = temp;
+
+        return root;
     }
 
     class TreeNode {
