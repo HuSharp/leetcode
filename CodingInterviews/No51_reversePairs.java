@@ -4,7 +4,7 @@
  * @Author: HuSharp
  * @Date: 2020-12-10 23:57:58
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-12-11 00:24:08
+ * @LastEditTime: 2020-12-30 20:10:47
  * @@Email: 8211180515@csu.edu.cn
  */
 package CodingInterviews;
@@ -26,7 +26,8 @@ public class No51_reversePairs {
 
         int mid = ((r - l) >> 1) + l;
         return mergeSort(nums, l, mid) 
-            + mergeSort(nums, mid+1, r) + mergeNum(nums, l, mid, r);
+            + mergeSort(nums, mid+1, r) 
+            + mergeNum(nums, l, mid, r);
     }
 
     private int mergeNum(int[] nums, int l, int mid, int r) {
@@ -38,7 +39,9 @@ public class No51_reversePairs {
         int resSum = 0;
         while(i <= mid && j <= r) {
             resSum += nums[i] > nums[j] ? (mid - i+1) : 0;
-            mergeHelp[pos++] = nums[i] <= nums[j] ? nums[i++] : nums[j++];
+            mergeHelp[pos++] = nums[i] <= nums[j] 
+                                ? nums[i++] 
+                                : nums[j++];
         }
 
         while(i<=mid) {
