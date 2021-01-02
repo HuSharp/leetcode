@@ -4,7 +4,7 @@
  * @Author: HuSharp
  * @Date: 2020-12-10 23:57:58
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-12-30 20:10:47
+ * @LastEditTime: 2020-12-31 12:02:46
  * @@Email: 8211180515@csu.edu.cn
  */
 package CodingInterviews;
@@ -47,7 +47,7 @@ public class No51_reversePairs {
         while(i<=mid) {
 			mergeHelp[pos++] = nums[i++];
 		}
-		while(j<=r) {
+		while(j<=r) { 
 			mergeHelp[pos++] = nums[j++];
         }
         
