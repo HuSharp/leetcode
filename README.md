@@ -59,6 +59,7 @@ LeetCode
 | 116  | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/) | [Java](./algorithms/java/116.populatingNextRightPointersInEachNode) | Medium     | [Java](./algorithms/java/116.populatingNextRightPointersInEachNode) |
 | 121  | [121. 买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [Java](./algorithms/java/121.bestTimeToBuyAndSellStock.java) | Easy       | [Java](./algorithms/java/121.bestTimeToBuyAndSellStock.md)   |
 | 122  | [122. 买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) |                                                              | Easy       |                                                              |
+| 127  | [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/) |                                                              | Hard       |                                                              |
 | 136  | [Single Number](https://leetcode.com/problems/single-number/description/) | [Java](./algorithms/java/136.singleNumber)                   | Easy       | [Java](./algorithms/java/136.singleNumber)                   |
 | 137  | [Single Number II](https://leetcode.com/problems/single-number-ii/description/) | [Java](./algorithms/java/137.singleNumberIi)                 | Medium     | [Java](./algorithms/java/137.singleNumberIi)                 |
 | 141  | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | [Java](./algorithms/java/141.linkedListCycle)                | Easy       | [Java](./algorithms/java/141.linkedListCycle)                |
@@ -70,6 +71,7 @@ LeetCode
 | 155  | [Min Stack](https://leetcode.com/problems/min-stack/)        | [Java](./algorithms/java/155.minStack)                       | Easy       | [Java](./algorithms/java/155.minStack)                       |
 | 160  | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/) | [Java](./algorithms/java/160.intersectionOfTwoLinkedLists)   | Easy       | [Java](./algorithms/java/160.intersectionOfTwoLinkedLists)   |
 | 167  | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) |                                                              | Easy       |                                                              |
+| 200  | [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) |                                                              | Medium     |                                                              |
 | 206  | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [Java](./algorithms/java/206.reverseLinkedList.java)         | Easy       | [Java](./algorithms/java/206.reverseLinkedList.md)           |
 | 215  | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) |                                                              | Medium     |                                                              |
 | 225  | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/) | [Java](./algorithms/java/206.reverseLinkedList)              | Medium     | [Java](./algorithms/java/206.reverseLinkedList)              |
@@ -79,6 +81,7 @@ LeetCode
 | 239  | [Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/description/) |                                                              | hard       |                                                              |
 | 240  | [Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii/description/) | [Java](./algorithms/java/240.searchA2DMatrixIi.java)         | Medium     | [Java](./algorithms/java/240.searchA2DMatrixIi.md)           |
 | 260  | [Single Number III](https://leetcode.com/problems/single-number-iii/description/) | [Java](./algorithms/java/260.singleNumberIii)                | Medium     | [Java](./algorithms/java/260.singleNumberIii)                |
+| 279  | [279. 完全平方数](https://leetcode-cn.com/problems/perfect-squares/) |                                                              | Medium     |                                                              |
 | 283  | [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/) | [Java](./algorithms/java/283.moveZeroes)                     | Easy       | [Java](./algorithms/java/283.moveZeroes)                     |
 | 287  | [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | [Java](./algorithms/java/287.findTheDuplicateNumber)         | Medium     | [Java](./algorithms/java/287.findTheDuplicateNumber)         |
 | 300  | [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence/description/) | [Java](./algorithms/java/300.longestIncreasingSubsequence)   | Medium     | [Java](./algorithms/java/300.longestIncreasingSubsequence)   |
@@ -94,6 +97,8 @@ LeetCode
 | 633  | [Sum of Square Numbers](https://leetcode.com/problems/sum-of-square-numbers/description/) | [Java](./algorithms/java/633.sumOfSquareNumbers)             | Medium     | [Java](./algorithms/java/633.sumOfSquareNumbers)             |
 | 637  | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/) | [Java](./algorithms/java/637.averageOfLevelsInBinaryTree)    | Easy       | [Java](./algorithms/java/637.averageOfLevelsInBinaryTree)    |
 | 671  | [Second Minimum Node In a Binary Tree](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/description/) | [Java](./algorithms/java/671.secondMinimumNodeInABinaryTree) | Easy       | [Java](./algorithms/java/671.secondMinimumNodeInABinaryTree) |
+| 695  | [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) |                                                              | Medium     |                                                              |
+| 1091 | [1091. 二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) |                                                              | Medium     |                                                              |
 
 
 
