@@ -1,10 +1,13 @@
+import java.util.LinkedList;
+import java.util.List;
+
 /*
  * @Descripttion: 
  * @version: 
  * @Author: HuSharp
  * @Date: 2020-12-15 23:52:25
  * @LastEditors: HuSharp
- * @LastEditTime: 2020-12-15 23:53:00
+ * @LastEditTime: 2021-02-06 21:50:35
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -16,33 +19,34 @@
 // @lc code=start
 class Solution {
     public List<List<Integer>> permute(int[] nums) {
-        int len = nums.length;
-        List<List<Integer>> res =  new LinkedList<>();
-        if(len == 0) {
-            return res;
+        List<List<Integer>> lists = new LinkedList<>();
+        if (nums == null || nums.length == 0) {
+            return lists;
         }
 
+        int len = nums.length;
         boolean[] used = new boolean[len];
-        List<Integer> path = new LinkedList<>();
-        dfs(nums, len, 0, path, used, res);
-
-        return res;
+        List<Integer> path = new LinkedList<Integer>();
+        backTrace(nums, 0, len, used, path, lists);
+        
+        return lists;
     }
 
-    private void dfs(int[] nums, int len, int depth, List<Integer> path, 
-                    boolean[] used, List<List<Integer>> res) {
-        if(depth == len) {
-            res.add(new LinkedList<>(path));
+    private void backTrace(int[] nums, int cur, int len, boolean[] used,
+                            List<Integer> path, List<List<Integer>> lists) {
+        // 当遍历完所有长度后， 进行返回
+        if (cur == len) {
+            lists.add(new LinkedList<>(path));
             return;
         }
 
-        // 在未选择数中依次选择一个元素作为下一个
-        for(int i = 0; i < len; i++) {
-            if( used[i] == false) {
-                path.add(nums[i]);
+        // 对没有 used 的数字进行选择
+        for (int i = 0; i < len; i++) {
+            if (!used[i]) {
+                // 首先将其变为已经使用
                 used[i] = true;
-
-                dfs(nums, len, depth+1, path, used, res);
+                path.add(nums[i]);
+                backTrace(nums, cur + 1, len, used, path, lists);
                 // 进行回溯
                 used[i] = false;
                 path.remove(path.size() - 1);
