@@ -7,7 +7,7 @@ import java.util.List;
  * @Author: HuSharp
  * @Date: 2021-02-07 22:27:13
  * @LastEditors: HuSharp
- * @LastEditTime: 2021-02-07 22:50:26
+ * @LastEditTime: 2021-02-10 21:53:15
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -33,9 +33,16 @@ class Solution {
 
     private void backTrace(int n, int k, int begin, List<Integer> path, List<List<Integer>> res) {
         if (path.size() == k) {
-            res.add(new LinkedList<>(path));
+            res.add(path);
             return;
         }
+
+        // // 原版本
+        // for (int i = begin; i <= n ; i++) {
+        //     path.add(i);
+        //     backTrace(n, k, begin + 1, path, res);
+        //     path.remove(path.size() - 1);
+        // }
 
         // 搜索起点的上界 + 接下来要选择的元素个数 - 1 = n
         // 接下来要选择的元素个数 = k - path.size()
