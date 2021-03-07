@@ -1,10 +1,10 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: HuSharp
  * @Date: 2021-03-05 00:01:25
  * @LastEditors: HuSharp
- * @LastEditTime: 2021-03-05 00:33:53
+ * @LastEditTime: 2021-03-06 11:47:17
  * @@Email: 8211180515@csu.edu.cn
  */
 /*
@@ -23,12 +23,14 @@
  */
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	head := &ListNode{Val: 0} // 头指针
+	
+	
 	n1, n2, carry := 0, 0, 0
 	current := head
 	for l1 != nil || l2 != nil || carry != 0 {
@@ -46,12 +48,13 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			l2 = l2.Next
 		}
 
-		current.Next = &ListNode{Val : (n1 + n2 + carry) % 10}
+		current.Next = &ListNode{Val: (n1 + n2 + carry) % 10}
 		current = current.Next
 		carry = (n1 + n2 + carry) / 10
 	}
 
 	return head.Next
 }
+
 // @lc code=end
 
